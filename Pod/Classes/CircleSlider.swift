@@ -150,8 +150,8 @@ open class CircleSlider: UIControl {
         self.delegate = delegate
     }
     
-    public required init?(coder _: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+    public required init?(coder: NSCoder) {
+        super.init(coder: coder)
     }
     
     open override func layoutSublayers(of _: CALayer) {
