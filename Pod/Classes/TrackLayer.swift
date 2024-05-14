@@ -41,8 +41,12 @@ internal class TrackLayer: CAShapeLayer {
         mask()
     }
     
-    required init?(coder _: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+    }
+    
+    override init(layer: Any) {
+        super.init(layer: layer)
     }
     
     internal override func draw(in ctx: CGContext) {
